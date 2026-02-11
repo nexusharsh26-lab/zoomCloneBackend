@@ -80,7 +80,7 @@ export const connectToSocket = (server: any) => {
           "socket-id-sender": socket.id,
         });
 
-        console.log("message:", key, ":", sender, data);
+        console.log("message:", matchingRoom, ":", sender, data);
 
         // Emit message to all users in the room
         connections[matchingRoom].forEach((elem) => {
